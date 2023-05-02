@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;900&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between relative py-1 px-4">
+          <div class="px-4 flex">
+            <a href="#home" class="font-bold text-lg text-primary block py-6">Rizzcookies.</a>
+          </div>
+          <div class="flex items-center px-4">
+            <button id="hamburger" name="hamburger" type="button" class="lg:hidden block absolute right-4">
+              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left rotate-45;"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+            </button>
+            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="#home" class="text-primary lg:text-primary py-2 px-8 group-hover:text-primary group-hover:font-semibold flex">Home</a>
+                </li>
+                <li class="group">
+                  <a href="#about" class="text-primary lg:text-primary py-2 px-8 group-hover:text-primary group-hover:font-semibold flex">About</a>
+                </li>
+                <li class="group">
+                  <a href="#galeri" class="text-primary lg:text-primary py-2 px-8 group-hover:text-primary group-hover:font-semibold flex">Cookies Of The Day!</a>
+                </li>
+                <li class="group">
+                  <a href="#detail" class="text-primary lg:text-primary py-2 px-8 group-hover:text-primary group-hover:font-semibold flex">Product</a>
+                </li>
+                <li class="group">
+                  <a href="#contact" class="text-primary lg:text-primary py-2 px-8 group-hover:text-primary group-hover:font-semibold flex">Contact</a>
+                </li>
+                <li id="account-text" class="group">
+                  <a
+                    href="#contact"
+                    class="lg:hidden text-primary lg:bg-primary bg-transparent rounded-full py-2 px-8 mx-auto lg:hover:border-primary lg:hover:border-2 lg:hover:bg-transparent lg:hover:text-primary group-hover:font-semibold flex"
+                    >Account</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <button>
+              <i class="lg:ml-8 lg:mr-0 mr-4 lg:w-6 lg:h-6 inline-flex text-primary w-5 h-5" data-feather="search"></i>
+            </button>
+            <button>
+              <i class="lg:ml-8 mr-9 lg:w-6 lg:h-6 inline-flex text-primary w-5 h-5" data-feather="shopping-cart"></i>
+            </button>
+            <button class="lg:border-2 lg:border-primary lg:rounded-full">
+              <i id="account-icons" name="user" class="hidden lg:w-6 lg:h-6 lg:inline-flex text-primary w-5 h-5" data-feather="user"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Home -->
+    <section id="home" class="pt-36 pb-20 w-full bg-bgcolor">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:pl-12 lg:w-1/2">
+            <h1 class="font-black text-primary text-3xl lg:text-6xl text-center lg:text-start">
+              Just One Bite Of <br />
+              Cookies, Perfect For <br />
+              Everything
+            </h1>
+            <h4 class="text-center mt-5 lg:mt-10 justify-center w-86 font-normal lg:text-2xl text-secondary lg:text-start">Enjoy our best hand-made cookies that fresh from the oven, made with heart of course!</h4>
+            <div class="flex lg:mt-10 justify-center motion-safe:animate-bounce-slow transition duration-700 ease-in-out lg:justify-start">
+              <a href="" target="_blank" class="bg-primary mt-7 px-7 py-4 lg:text-xl rounded-full text-bgcolor justify-center inline-flex"
+                >Explore More <i class="ml-3 lg:w-6 lg:h-6 inline-flex text-bgcolor w-5 h-5" data-feather="arrow-down"></i
+              ></a>
+            </div>
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-9 lg:right-0 lg:mt-9">
+              <img src="dist/img/hero-img.png" alt="abimanyu" width="644" height="658" class="max-w-full mx-auto relative z-10" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./dist/img/cookies-hr.png" class="w-full pt-10" alt="" />
+    </section>
+    <section class="pt-36 pb-20 bg-bgcolor"></section>
+    <script>
+      feather.replace();
+    </script>
+    <script src="./dist/js/script.js"></script>
+  </body>
+</html>
