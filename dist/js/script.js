@@ -16,3 +16,25 @@ window.onscroll = function () {
     header.classList.remove("navbar-fixed");
   }
 };
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  spaceBetween: 1,
+  slidesPerView: 2,
+  centerSlide: true,
+  mousewheel: true,
+  autoplay: {
+    delay: 2000,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 0,
+    },
+  },
+});
