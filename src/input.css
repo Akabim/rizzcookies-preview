@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
@@ -27,7 +31,7 @@ body {
   @apply -rotate-45;
 }
 
-.bg-img {
-  background-image: url("./dist/img/bgimage.webp");
-  background-size: cover;
+.search-form.active {
+  @apply scale-y-100;
+  @apply transition-all duration-300;
 }

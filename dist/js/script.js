@@ -1,11 +1,25 @@
 const hamburger = document.querySelector("#hamburger");
 const navMenu = document.querySelector("#nav-menu");
+const searchForm = document.querySelector(".search-form");
+const searchBox = document.querySelector("#search-box");
+
+document.querySelector("#search-button").onclick = () => {
+  searchForm.classList.toggle("active");
+  searchBox.focus();
+};
 
 hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("hamburger-active");
   navMenu.classList.toggle("hidden");
 });
 
+const sb = document.querySelector("#search-button");
+
+document.addEventListener("click", function (e) {
+  if (!sb.contains(e.target) && !searchForm.contains(e.target)) {
+    searchForm.classList.remove("active");
+  }
+});
 window.onscroll = function () {
   const header = document.querySelector("header");
   const fixedNav = header.offsetTop;
