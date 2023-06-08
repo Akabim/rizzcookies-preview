@@ -38,7 +38,6 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 1,
   slidesPerView: 2,
   centerSlide: true,
-  mousewheel: true,
   autoplay: {
     delay: 2000,
   },
